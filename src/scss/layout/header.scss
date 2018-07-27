@@ -1,0 +1,31 @@
+.header{
+    // background-color:rgb(37, 116, 180);
+    height:100vh;
+    display:flex; align-items:center;
+    background-image:$header-bg;
+    background-size:cover;
+    // background-position:bottom right;
+    color:$primary_white;
+
+    a:link,a:visited{ color:inherit; text-decoration:none; }
+
+    &__text-content{
+        width:60vw;
+        &__title{font-size:5rem; font-weight:100;}
+        &__subtitle{
+            text-align:right; font-size:2.25rem; margin-top:1rem; letter-spacing:3px;
+        }
+    }
+    &__icons{
+        margin:2rem 0 0 150px;
+        display:flex;
+        &-link{
+            width:37px; height:37px;
+            border-radius: 5px;
+            background-color:$primary_white;
+            display:flex; justify-content:center; align-items:center;
+            &:not(:last-of-type){ margin-right:12px; }
+        }
+        &-icon{ width:25px; height:25px; }
+    }
+}

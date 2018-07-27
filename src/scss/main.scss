@@ -1,0 +1,12 @@
+*, *::before, *::after{ margin:0; padding:0; box-sizing:inherit; }
+html{ box-sizing:border-box; }
+body{ font-family:'Roboto',sans-serif; }
+
+$show-header-bg:true;
+$header-bg:url(/../../assets/images/header/bg2.jpg);
+
+$primary_white:rgb(235,235,245);
+
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/skills';
