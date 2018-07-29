@@ -24,7 +24,7 @@
         width:400px; height:100vh;
         display:flex; align-items:center;
         z-index:-5;
-        transition:right .07s;
+        transition:right .3s ease-in .1s;
         &__links{
             margin:0 auto;
             &-link{
