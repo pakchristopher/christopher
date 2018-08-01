@@ -1,0 +1,105 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto',sans-serif; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #ebebf5; }
+  .nav__btn {
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 3px solid #ebebf5;
+    width: 52px;
+    padding: 2px 5px; }
+    .nav__btn-a::before {
+      content: 'M E';
+      display: block;
+      text-align: center; }
+    .nav__btn-a::after {
+      content: 'N U';
+      display: block;
+      text-align: center; }
+    .nav__btn.open .nav__btn-a::before {
+      content: 'H I';
+      display: block;
+      text-align: center; }
+    .nav__btn.open .nav__btn-a::after {
+      content: 'D E';
+      display: block;
+      text-align: center; }
+    .nav__btn.open ~ .nav__menu {
+      right: 0; }
+  .nav__menu {
+    background-color: rgba(37, 71, 122, 0.7);
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: -5;
+    transition: right .3s ease-in .1s; }
+    .nav__menu__links {
+      margin: 0 auto; }
+      .nav__menu__links-link {
+        font-size: 2.75rem;
+        display: block; }
+        .nav__menu__links-link:link, .nav__menu__links-link:visited {
+          color: inherit;
+          text-decoration: none; }
+        .nav__menu__links-link:not(:last-of-type) {
+          margin-bottom: 2rem; }
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(/../../assets/images/header/bg2.jpg);
+  background-size: cover;
+  color: #ebebf5; }
+  .header a:link, .header a:visited {
+    color: inherit;
+    text-decoration: none; }
+  .header__text-content {
+    width: 720px; }
+    .header__text-content__title {
+      font-size: 5rem;
+      font-weight: 100; }
+    .header__text-content__subtitle {
+      text-align: right;
+      font-size: 2.25rem;
+      margin-top: 1rem;
+      letter-spacing: 3px; }
+  .header__icons {
+    margin: 2rem 0 0 150px;
+    display: flex; }
+    .header__icons-link {
+      width: 37px;
+      height: 37px;
+      border-radius: 5px;
+      background-color: #ebebf5;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header__icons-link:not(:last-of-type) {
+        margin-right: 12px; }
+    .header__icons-icon {
+      width: 25px;
+      height: 25px; }
+
+.skills {
+  background-color: #f8cde8;
+  height: 100vh; }
+
